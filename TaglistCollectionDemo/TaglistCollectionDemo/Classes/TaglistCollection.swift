@@ -33,7 +33,7 @@ protocol TagViewDelegate: class {
     /// Cell background color
     @IBInspectable public var cellBackgroundColor : UIColor = UIColor.clear {
         didSet {
-            Theme.shared.cellBackGroundColor = cellBackgroundColor
+            TagListTheme.shared.cellBackGroundColor = cellBackgroundColor
             self.setNeedsDisplay()
         }
     }
@@ -41,7 +41,7 @@ protocol TagViewDelegate: class {
     /// Tag font
     @IBInspectable public var textFont: UIFont = UIFont.systemFont(ofSize: 15.0) {
         didSet {
-            Theme.shared.textFont = textFont
+            TagListTheme.shared.textFont = textFont
             self.setNeedsDisplay()
             
         }
@@ -50,7 +50,7 @@ protocol TagViewDelegate: class {
     /// Tag text color
     @IBInspectable public var tagTextColor : UIColor = UIColor.clear {
         didSet {
-            Theme.shared.tagTextColor = tagTextColor
+            TagListTheme.shared.tagTextColor = tagTextColor
             self.setNeedsDisplay()
         }
     }
@@ -58,7 +58,7 @@ protocol TagViewDelegate: class {
     /// Tag backgound color
     @IBInspectable public var tagBackgroundColor : UIColor = UIColor.clear {
         didSet {
-            Theme.shared.tagBackgroundColor = tagBackgroundColor
+            TagListTheme.shared.tagBackgroundColor = tagBackgroundColor
             self.setNeedsDisplay()
         }
     }
@@ -67,7 +67,7 @@ protocol TagViewDelegate: class {
     /// Tag border color
     @IBInspectable public var tagBorderColor : UIColor = UIColor.clear {
         didSet {
-            Theme.shared.tagBorderColor = tagBorderColor
+            TagListTheme.shared.tagBorderColor = tagBorderColor
             self.setNeedsDisplay()
         }
     }
@@ -75,7 +75,7 @@ protocol TagViewDelegate: class {
     /// Tag border width
     @IBInspectable public var tagBorderWidth : CGFloat = 0.0 {
         didSet {
-            Theme.shared.tagBorderWidth = tagBorderWidth
+            TagListTheme.shared.tagBorderWidth = tagBorderWidth
             self.setNeedsDisplay()
         }
     }
@@ -83,7 +83,7 @@ protocol TagViewDelegate: class {
     /// Tag shadow color
     @IBInspectable public var shadowColor : UIColor = UIColor.clear {
         didSet {
-            Theme.shared.tagShadowColor = shadowColor
+            TagListTheme.shared.tagShadowColor = shadowColor
             self.setNeedsDisplay()
         }
     }
@@ -91,7 +91,7 @@ protocol TagViewDelegate: class {
     /// Tag shadow opacity
     @IBInspectable public var shadowOpacity : Float = 0.5 {
         didSet {
-            Theme.shared.tagShadowOpacity = shadowOpacity
+            TagListTheme.shared.tagShadowOpacity = shadowOpacity
             self.setNeedsDisplay()
         }
     }
@@ -99,7 +99,7 @@ protocol TagViewDelegate: class {
     /// Tag shadow radius
     @IBInspectable public var shadowRadius : CGFloat = 2.0  {
         didSet {
-            Theme.shared.tagShadowRadius = shadowRadius
+            TagListTheme.shared.tagShadowRadius = shadowRadius
             self.setNeedsDisplay()
         }
     }
@@ -107,7 +107,7 @@ protocol TagViewDelegate: class {
     /// Enable disable shadow
     @IBInspectable public var isShadowEnabled : Bool = false {
         didSet {
-            Theme.shared.isShadowEnabled = isShadowEnabled
+            TagListTheme.shared.isShadowEnabled = isShadowEnabled
             self.setNeedsDisplay()
         }
     }
@@ -123,7 +123,7 @@ protocol TagViewDelegate: class {
     /// Allow single selection
     @IBInspectable public var allowSingleSelection : Bool = false {
         didSet {
-            Theme.shared.allowSingleSelection = allowSingleSelection
+            TagListTheme.shared.allowSingleSelection = allowSingleSelection
             self.setNeedsDisplay()
         }
     }
@@ -131,7 +131,7 @@ protocol TagViewDelegate: class {
     /// Allow multiple selection
     @IBInspectable public var allowMultipleSelection : Bool = false {
         didSet {
-            Theme.shared.allowMultipleSelection = allowMultipleSelection
+            TagListTheme.shared.allowMultipleSelection = allowMultipleSelection
             self.setNeedsDisplay()
         }
     }
@@ -141,7 +141,7 @@ protocol TagViewDelegate: class {
     /// Show hide delete buttons
     @IBInspectable public var isDeleteEnabled : Bool = false {
         didSet {
-            Theme.shared.isDeleteEnabled = isDeleteEnabled
+            TagListTheme.shared.isDeleteEnabled = isDeleteEnabled
             self.setNeedsDisplay()
         }
     }
@@ -149,7 +149,7 @@ protocol TagViewDelegate: class {
     /// Close icon tint color
     @IBInspectable public var closeIconTint : UIColor = UIColor.white {
         didSet {
-            Theme.shared.closeIconTint = closeIconTint
+            TagListTheme.shared.closeIconTint = closeIconTint
             self.setNeedsDisplay()
         }
     }
@@ -157,7 +157,7 @@ protocol TagViewDelegate: class {
     /// Close icon width
     @IBInspectable public var closeIconWidth : CGFloat = 0.0 {
         didSet {
-            Theme.shared.closeIconWidth = closeIconWidth
+            TagListTheme.shared.closeIconWidth = closeIconWidth
             self.setNeedsDisplay()
         }
     }
@@ -165,7 +165,7 @@ protocol TagViewDelegate: class {
     /// Close icon height
     @IBInspectable public var closeIconHeight : CGFloat = 0.0 {
         didSet {
-            Theme.shared.closeIconHeight = closeIconHeight
+            TagListTheme.shared.closeIconHeight = closeIconHeight
             self.setNeedsDisplay()
         }
     }
@@ -176,7 +176,7 @@ protocol TagViewDelegate: class {
     /// Selected tag backgound color
     @IBInspectable public var selectionBackgroundColor : UIColor = UIColor.clear {
         didSet {
-            Theme.shared.selectionColor = selectionBackgroundColor
+            TagListTheme.shared.selectionColor = selectionBackgroundColor
             self.setNeedsDisplay()
         }
     }
@@ -184,7 +184,7 @@ protocol TagViewDelegate: class {
     /// Selected tag text color
     @IBInspectable public var selectionTagTextColor : UIColor = UIColor.clear {
         didSet {
-            Theme.shared.selectionTagTextColor = selectionTagTextColor
+            TagListTheme.shared.selectionTagTextColor = selectionTagTextColor
             self.setNeedsDisplay()
         }
     }
@@ -192,7 +192,7 @@ protocol TagViewDelegate: class {
     /// Selected tag close icon tag
     @IBInspectable public var selectionCloseIconTint : UIColor = UIColor.white {
         didSet {
-            Theme.shared.selectionCloseIconTint = selectionCloseIconTint
+            TagListTheme.shared.selectionCloseIconTint = selectionCloseIconTint
             self.setNeedsDisplay()
         }
     }

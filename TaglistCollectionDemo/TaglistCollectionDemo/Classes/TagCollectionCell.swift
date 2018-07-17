@@ -35,24 +35,24 @@ class TagCollectionCell: UICollectionViewCell {
         
         // initial setup
         self.lblTag.backgroundColor = UIColor.clear
-        self.backgroundColor = Theme.shared.cellBackGroundColor
-        self.lblTag.textColor = Theme.shared.tagTextColor
-        self.lblTag.font = Theme.shared.textFont
-        self.viewTag.backgroundColor = Theme.shared.tagBackgroundColor
+        self.backgroundColor = TagListTheme.shared.cellBackGroundColor
+        self.lblTag.textColor = TagListTheme.shared.tagTextColor
+        self.lblTag.font = TagListTheme.shared.textFont
+        self.viewTag.backgroundColor = TagListTheme.shared.tagBackgroundColor
         self.viewTag.layer.cornerRadius = 15.0
         self.viewTag.clipsToBounds = true
         
         // Apply theme
-        if (Theme.shared.isShadowEnabled == true) {
+        if (TagListTheme.shared.isShadowEnabled == true) {
             self.viewTag.layer.masksToBounds = false
-            self.viewTag.layer.shadowRadius = Theme.shared.tagShadowRadius
-            self.viewTag.layer.shadowOpacity = Theme.shared.tagShadowOpacity
+            self.viewTag.layer.shadowRadius = TagListTheme.shared.tagShadowRadius
+            self.viewTag.layer.shadowOpacity = TagListTheme.shared.tagShadowOpacity
             self.viewTag.layer.shadowOffset = CGSize.zero
-            self.viewTag.layer.shadowColor = Theme.shared.tagShadowColor.cgColor
+            self.viewTag.layer.shadowColor = TagListTheme.shared.tagShadowColor.cgColor
         }
         else {
-            self.viewTag.layer.borderWidth = Theme.shared.tagBorderWidth
-            self.viewTag.layer.borderColor = Theme.shared.tagBorderColor.cgColor
+            self.viewTag.layer.borderWidth = TagListTheme.shared.tagBorderWidth
+            self.viewTag.layer.borderColor = TagListTheme.shared.tagBorderColor.cgColor
         }
         
     }
@@ -61,19 +61,19 @@ class TagCollectionCell: UICollectionViewCell {
     func configureCell() {
         
         self.lblTag.text = objTagName
-        if(Theme.shared.isDeleteEnabled == false) {
+        if(TagListTheme.shared.isDeleteEnabled == false) {
             self.btnRemoveTag.removeFromSuperview()
         }
-        if(Theme.shared.isDeleteEnabled == true) {
+        if(TagListTheme.shared.isDeleteEnabled == true) {
             if(self.isCellSelected == true) {
-                self.viewTag.backgroundColor = Theme.shared.selectionColor
-                self.lblTag.textColor = Theme.shared.selectionTagTextColor
-                self.btnRemoveTag.tintcolor = Theme.shared.selectionCloseIconTint
+                self.viewTag.backgroundColor = TagListTheme.shared.selectionColor
+                self.lblTag.textColor = TagListTheme.shared.selectionTagTextColor
+                self.btnRemoveTag.tintcolor = TagListTheme.shared.selectionCloseIconTint
             }
             else {
-                self.lblTag.textColor = Theme.shared.tagTextColor
-                self.viewTag.backgroundColor = Theme.shared.tagBackgroundColor
-                self.btnRemoveTag.tintcolor = Theme.shared.closeIconTint
+                self.lblTag.textColor = TagListTheme.shared.tagTextColor
+                self.viewTag.backgroundColor = TagListTheme.shared.tagBackgroundColor
+                self.btnRemoveTag.tintcolor = TagListTheme.shared.closeIconTint
             }
         }
     }

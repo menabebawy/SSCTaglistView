@@ -35,7 +35,7 @@ class CloseButton: UIButton {
         
         if self.subviews.count == 0
         {
-            closeView = CloseView(frame: CGRect(x: 0.0, y: 0.0, width: Theme.shared.closeIconWidth, height: Theme.shared.closeIconHeight))
+            closeView = CloseView(frame: CGRect(x: 0.0, y: 0.0, width: TagListTheme.shared.closeIconWidth, height: TagListTheme.shared.closeIconHeight))
             
             closeView?.center = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
             
@@ -59,7 +59,7 @@ class CloseView : UIView {
         self.init(frame: frame)
         self.strokColor = strokColor
     }
-    var strokColor = Theme.shared.closeIconTint{
+    var strokColor = TagListTheme.shared.closeIconTint{
         didSet {
             self.lineShape.strokeColor = strokColor.cgColor
         }

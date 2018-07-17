@@ -1,5 +1,5 @@
 //
-//  Theme.swift
+//  TagListTheme.swift
 //  TaglistCollectionDemo
 //
 //  Created by Sanjaysinh Chauhan on 30/11/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Theme {
+class TagListTheme {
  
     var cellBackGroundColor     : UIColor!   // Background color of cell
     var textFont                : UIFont!    // Tag font
@@ -36,5 +36,5 @@ class Theme {
     var selectionCloseIconTint  = UIColor.red   // Tag selection icon tint color
     var closeIconWidth: CGFloat = 13.0       // Close icon width
     var closeIconHeight:CGFloat = 13.0       // Close icon height
-    static let shared           = Theme()    // shared instance 
+    static let shared           = TagListTheme()    // shared instance 
 }
