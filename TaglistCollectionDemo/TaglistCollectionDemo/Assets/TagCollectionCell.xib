@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,16 +20,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-Zt-qga">
-                        <rect key="frame" x="5" y="5" width="240" height="40"/>
+                        <rect key="frame" x="5" y="8" width="240" height="34"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHz-Kh-0bV">
-                                <rect key="frame" x="10" y="6" width="188" height="28"/>
+                                <rect key="frame" x="10" y="0.0" width="188" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCA-7l-0nF" customClass="CloseButton" customModule="TaglistCollectionDemo" customModuleProvider="target">
-                                <rect key="frame" x="198" y="6" width="42" height="28"/>
+                                <rect key="frame" x="198" y="3" width="42" height="28"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="3oC-4T-KPQ"/>
@@ -47,17 +47,17 @@
                             <constraint firstAttribute="trailing" secondItem="PHz-Kh-0bV" secondAttribute="trailing" priority="750" constant="10" id="aZN-hR-e34"/>
                             <constraint firstAttribute="trailing" secondItem="KCA-7l-0nF" secondAttribute="trailing" id="bmP-Wb-au0"/>
                             <constraint firstItem="KCA-7l-0nF" firstAttribute="centerY" secondItem="Ofb-Zt-qga" secondAttribute="centerY" id="gLm-I9-2jt"/>
-                            <constraint firstAttribute="bottom" secondItem="PHz-Kh-0bV" secondAttribute="bottom" constant="6" id="hxI-hB-Ulx"/>
-                            <constraint firstItem="PHz-Kh-0bV" firstAttribute="top" secondItem="Ofb-Zt-qga" secondAttribute="top" constant="6" id="vzQ-hh-Zq5"/>
+                            <constraint firstAttribute="bottom" secondItem="PHz-Kh-0bV" secondAttribute="bottom" id="hxI-hB-Ulx"/>
+                            <constraint firstItem="PHz-Kh-0bV" firstAttribute="top" secondItem="Ofb-Zt-qga" secondAttribute="top" id="vzQ-hh-Zq5"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="Ofb-Zt-qga" firstAttribute="leading" secondItem="9RR-0J-EyL" secondAttribute="leading" constant="5" id="Re6-h4-yb7"/>
-                <constraint firstAttribute="bottom" secondItem="Ofb-Zt-qga" secondAttribute="bottom" constant="5" id="RuQ-G6-06Y"/>
+                <constraint firstAttribute="bottom" secondItem="Ofb-Zt-qga" secondAttribute="bottom" constant="8" id="RuQ-G6-06Y"/>
                 <constraint firstAttribute="trailing" secondItem="Ofb-Zt-qga" secondAttribute="trailing" constant="5" id="UxR-bI-ZNS"/>
-                <constraint firstItem="Ofb-Zt-qga" firstAttribute="top" secondItem="9RR-0J-EyL" secondAttribute="top" constant="5" id="eQi-9B-H5d"/>
+                <constraint firstItem="Ofb-Zt-qga" firstAttribute="top" secondItem="9RR-0J-EyL" secondAttribute="top" constant="8" id="eQi-9B-H5d"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="tt6-0A-VKT"/>
             <connections>
