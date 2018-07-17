@@ -200,7 +200,7 @@ public protocol TagViewDelegate: class {
     var collectionView : UICollectionView!
     
     /// All tag names
-    var tagNames = [String]()
+    public var tagNames = [String]()
     
     /// Array for selected unselected tag index
     var selectedTagAck = [Bool]()
