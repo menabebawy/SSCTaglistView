@@ -12,7 +12,7 @@ protocol TagViewDelegate: class {
     /// this method will fire automatically when tapped on tag
     ///
     /// - Parameter indexPath: return indexpath of tapped tag
-    func didTaponTag ( _ indexPath : IndexPath)
+    func didTapOnTag ( _ indexPath : IndexPath)
     
     /// this method will fire automatically when removed perticular tag
     ///
@@ -406,7 +406,7 @@ extension TaglistCollection : UICollectionViewDataSource ,UICollectionViewDelega
     
     // 4.
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didTaponTag(indexPath)
+        delegate?.didTapOnTag(indexPath)
         if(self.allowMultipleSelection == true) {
             self.selectedTagAck[indexPath.item] = !self.selectedTagAck[indexPath.item]
         }

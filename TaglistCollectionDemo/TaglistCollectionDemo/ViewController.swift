@@ -84,7 +84,7 @@ extension ViewController : TagViewDelegate {
         print("RemoveIndexPath==\(indexPath)")
     }
     
-    func didTaponTag(_ indexPath: IndexPath) {
+    func didTapOnTag(_ indexPath: IndexPath) {
         print("Tag tapped: \(self.aryTeglist[indexPath.item])")
     }
 
