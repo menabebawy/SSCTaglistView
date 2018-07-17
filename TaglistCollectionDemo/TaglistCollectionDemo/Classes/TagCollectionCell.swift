@@ -23,7 +23,6 @@ class TagCollectionCell: UICollectionViewCell {
     var isCellSelected : Bool!
     var indexPath : IndexPath!
     var delegate : TagColllectionCellDelegate!
-    var isHeightCalculated: Bool = false
     
     // IBActions
     @IBAction func removeAction(_ sender: CloseButton) {
@@ -79,16 +78,12 @@ class TagCollectionCell: UICollectionViewCell {
     }
     
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        //Exhibit A - We need to cache our calculation to prevent a crash.
-        if !isHeightCalculated {
-            setNeedsLayout()
-            layoutIfNeeded()
-            let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)
-            var newFrame = layoutAttributes.frame
-            newFrame.size.width = CGFloat(ceilf(Float(size.width)))
-            layoutAttributes.frame = newFrame
-            isHeightCalculated = true
-        }
+        setNeedsLayout()
+        layoutIfNeeded()
+        let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)
+        var newFrame = layoutAttributes.frame
+        newFrame.size.width = CGFloat(ceilf(Float(size.width)))
+        layoutAttributes.frame = newFrame
         return layoutAttributes
     }
 }

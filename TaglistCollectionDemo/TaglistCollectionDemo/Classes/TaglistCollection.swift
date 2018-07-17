@@ -389,7 +389,6 @@ extension TaglistCollection : UICollectionViewDataSource ,UICollectionViewDelega
             cell.isCellSelected = self.selectedTagAck[indexPath.item]
             cell.delegate = self as TagColllectionCellDelegate
             cell.configureCell()
-            cell.isHeightCalculated = false
         }
         return cell
     }
