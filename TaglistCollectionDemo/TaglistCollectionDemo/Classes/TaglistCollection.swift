@@ -243,7 +243,8 @@ public protocol TagViewDelegate: class {
         collectionView.showsHorizontalScrollIndicator = scrollIndicator
         
         // 4 - register nib
-        let tagCollectionNib = UINib(nibName: String(describing: TagCollectionCell.self), bundle: nil)
+        let bundle = Bundle(for: TagCollectionCell.self)
+        let tagCollectionNib = UINib(nibName: String(describing: TagCollectionCell.self), bundle: bundle)
         collectionView!.register(tagCollectionNib, forCellWithReuseIdentifier: "Cell")
         
         // 5 - set datasource delegate and colors
