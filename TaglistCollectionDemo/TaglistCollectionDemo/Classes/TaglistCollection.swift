@@ -205,7 +205,7 @@ protocol TagViewDelegate: class {
     /// Array for selected unselected tag index
     var selectedTagAck = [Bool]()
     
-    var delegate : TagViewDelegate?
+    weak var delegate : TagViewDelegate?
     
     /// Init tag view
     ///
