@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/sanjaysinh-Chauhan/SSCTaglistView.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '9.0'
-  s.source_files = "TaglistCollectionDemo/TaglistCollectionDemo/Classes/*"
-  s.resource_bundles = {'SSCTaglistView' => ['TaglistCollectionDemo/TaglistCollectionDemo/Assets/*']}
+  s.source_files = 'TaglistCollectionDemo/TaglistCollectionDemo/Classes/*'
+  s.resource_bundles = 'TaglistCollectionDemo/TaglistCollectionDemo/Assets/*'
 
 end
