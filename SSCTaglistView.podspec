@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
  
   s.ios.deployment_target = '9.0'
   s.source_files = "TaglistCollectionDemo/TaglistCollectionDemo/Classes/*"
-  s.resource_bundles = "TaglistCollectionDemo/TaglistCollectionDemo/Assets/*"
+  s.resource_bundles = {["TaglistCollectionDemo/TaglistCollectionDemo/Assets/*"]}
 
 end
