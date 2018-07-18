@@ -244,8 +244,12 @@ public protocol TagViewDelegate: class {
         
         // 4 - register nib
         let bundle = Bundle(for: TagCollectionCell.self)
-        let tagCollectionNib = UINib(nibName: String(describing: TagCollectionCell.self), bundle: bundle)
-        collectionView!.register(tagCollectionNib, forCellWithReuseIdentifier: "Cell")
+        if let path = bundle.path(forResource: "SSCTaglistView", ofType: "bundle"){
+            if let bundle = Bundle(path: path) {
+                let tagCollectionNib = UINib(nibName: String(describing: TagCollectionCell.self), bundle: bundle)
+                collectionView!.register(tagCollectionNib, forCellWithReuseIdentifier: "Cell")
+            }
+        }
         
         // 5 - set datasource delegate and colors
         collectionView.backgroundColor = UIColor.red
